@@ -1,6 +1,5 @@
 # PokéFlutter TCG
 
-![PokéFlutter Banner](assets/images/banner.png)
 
 **PokéFlutter TCG** est une application mobile cross-platform inspirée du jeu de cartes Pokémon TCG. Ce projet, développé en Flutter et Dart
 
