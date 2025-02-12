@@ -13,7 +13,7 @@ class BattlePokemon {
     this.maxAttack = 20,
   });
 
-  /// Attaque aléatoire entre minAttack et maxAttack
+  // Attaque aléatoire entre minAttack et maxAttack
   int attackDamage() {
     return Random().nextInt(maxAttack - minAttack + 1) + minAttack;
   }

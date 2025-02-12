@@ -20,7 +20,7 @@ class BattlePokemon {
     this.maxAttack = 20,
   });
 
-  /// Retourne un montant de dégâts aléatoire
+  // Retourne un montant de dégâts aléatoire
   int attackDamage() {
     return Random().nextInt(maxAttack - minAttack + 1) + minAttack;
   }

@@ -14,14 +14,13 @@ class Pokemon {
   });
 
   factory Pokemon.fromJson(Map<String, dynamic> json) {
-    // Sur la PokéAPI, vous pouvez trouver les sprites dans
-    // json['sprites']['front_default'] par exemple.
-    // Les HP se trouvent généralement dans 'stats', etc.
+    // PokéAPI, les sprites dans
+    // json['sprites']['front_default']
     return Pokemon(
       id: json['id'],
       name: json['name'],
       imageUrl: json['sprites']['front_default'] ?? '',
-      hp: json['stats'][0]['base_stat'], // HP = stats[0]
+      hp: json['stats'][0]['base_stat'],
       types:
           (json['types'] as List)
               .map((typeInfo) => typeInfo['type']['name'] as String)

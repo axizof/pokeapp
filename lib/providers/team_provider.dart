@@ -21,7 +21,7 @@ class TeamProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  // Ajouter / retirer un pokémon de l’équipe user
+  // Ajoute / retire un pokémon de l’équipe user
   void addToUserTeam(Pokemon pokemon) {
     if (_userTeam.length < maxTeamSize && !_userTeam.contains(pokemon)) {
       _userTeam.add(pokemon);
@@ -34,6 +34,6 @@ class TeamProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  // Vérifier si le Pokémon est déjà dans l’équipe utilisateur
+  // Vérifie si le Pokémon est déjà dans l’équipe utilisateur
   bool isInUserTeam(Pokemon pokemon) => _userTeam.contains(pokemon);
 }
