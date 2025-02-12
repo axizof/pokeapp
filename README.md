@@ -11,7 +11,6 @@
 - [Fonctionnalités](#fonctionnalités)
 - [Architecture & Technologies](#architecture--technologies)
 - [Installation](#installation)
-- [Utilisation](#utilisation)
 
 ---
 
