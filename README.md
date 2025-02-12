@@ -1,17 +1,86 @@
-# myapp
+# PokéFlutter TCG
 
-A new Flutter project.
 
-## Getting Started
+**PokéFlutter TCG** est une application mobile cross-platform inspirée du jeu de cartes Pokémon TCG. Ce projet, développé en Flutter et Dart
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## Table des matières
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Présentation](#présentation)
+- [Fonctionnalités](#fonctionnalités)
+- [Architecture & Technologies](#architecture--technologies)
+- [Installation](#installation)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# pokeapp
+---
+
+## Présentation
+
+PokéFlutter TCG vous permet de :
+- Parcourir un **Pokédex** complet grâce à l'intégration de l'API [PokéAPI](https://pokeapi.co/).
+- Visualiser les détails de chaque Pokémon (nom, image, statistiques, types, etc.) via une interface **Master/Detail** intuitive.
+- Constituer votre équipe de 6 Pokémon en sélectionnant manuellement vos favoris.
+- Affronter une Intelligence Artificielle qui génère automatiquement une équipe de 6 Pokémon.
+- Vivre des combats en tour par tour avec des animations dynamiques (avec [flutter_animate](https://pub.dev/packages/flutter_animate))
+
+---
+
+## Fonctionnalités
+
+- **Navigation fluide** avec [GoRouter](https://pub.dev/packages/go_router) :
+  - Écran **Master** (Liste des Pokémon)
+  - Écran **Détail** (Informations détaillées sur chaque Pokémon)
+  - Écran **Équipe** (Sélection et visualisation des équipes)
+  - Écran **Combat** (Système de combat TCG inspiré des mécaniques Pokémon)
+
+- **Gestion d'état** pour :
+  - Stocker et persister les équipes d'utilisateur et d'IA.
+  - Gérer le cycle de vie du combat (sélection du Pokémon actif, suivi des scores, etc.).
+
+- **Animations et Effets** :
+  - Animations fluides sur les écrans et les composants (fade, slide, scale) avec [flutter_animate](https://pub.dev/packages/flutter_animate).
+  - Effets visuels accrocheurs sur les actions clés (attaques, transitions, popups).
+
+- **Communication API** :
+  - Récupération des données Pokémon via [PokéAPI](https://pokeapi.co/).
+  - Gestion des requêtes HTTP avec [Dio](https://pub.dev/packages/dio).
+
+- **Personnalisation UI/UX** :
+
+---
+
+## Architecture & Technologies
+
+Le projet est structuré de manière à favoriser la maintenabilité et l’extensibilité.
+
+### Technologies utilisées :
+- **Flutter & Dart** : Développement cross-platform (Android, iOS, Web)
+- **Dio** : Gestion des appels HTTP
+- **GoRouter** : Navigation et routing
+- **Flutter Animate** : Effets et animations visuels
+
+  ---
+
+## Installation
+
+### Prérequis
+
+- [Flutter SDK](https://flutter.dev/docs/get-started/install)
+
+  ### Installer les dépendances
+  - flutter pub get
+ 
+  - Lancer l'application en mode debug :
+      flutter run
+
+  - build web:
+      flutter build web
+  
+
+### Screenshoot
+![img](https://github.com/axizof/pokeapp/blob/main/screen/cap1.png?raw=true)
+![img](https://github.com/axizof/pokeapp/blob/main/screen/cap2.png?raw=true)
+![img](https://github.com/axizof/pokeapp/blob/main/screen/cap3.png?raw=true)
+![img](https://github.com/axizof/pokeapp/blob/main/screen/cap4.png?raw=true)
+![img](https://github.com/axizof/pokeapp/blob/main/screen/cap5.png?raw=true)
+
