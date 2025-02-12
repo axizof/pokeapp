@@ -79,4 +79,8 @@ Le projet est structuré de manière à favoriser la maintenabilité et l’exte
 
 ### Screenshoot
 ![img](https://github.com/axizof/pokeapp/blob/main/screen/cap1.png?raw=true)
+![img](https://github.com/axizof/pokeapp/blob/main/screen/cap2.png?raw=true)
+![img](https://github.com/axizof/pokeapp/blob/main/screen/cap3.png?raw=true)
+![img](https://github.com/axizof/pokeapp/blob/main/screen/cap4.png?raw=true)
+![img](https://github.com/axizof/pokeapp/blob/main/screen/cap5.png?raw=true)
 
